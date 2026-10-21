@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    height: 100dvh;
+
+    display: grid;
+    place-items: center;
+
+    padding: 1rem;
+}
+
+#jeu {
+    width: min(
+        calc(100vw - 2rem),
+        calc((100dvh - 2rem) * var(--ratio))
+    );
+
+    height: min(
+        calc(100dvh - 2rem),
+        calc((100vw - 2rem) / var(--ratio))
+    );
+
+    background: black;
+    border-radius: 1rem;
+    display: block;
+}
